@@ -28,19 +28,28 @@ jobs:
         uses: android-actions/setup-android@v3
 
       - name: Install Dependencies 📦
-        run: npm ci
+        run: npm install
 
       - name: Build Web 🏗️
-        run: npm run build
+        run: npx vite build
+
+      - name: List dist folder
+        run: ls -la dist/
 
       - name: Sync Capacitor 🔌
-        run: npx cap sync android
+        run: npx cap sync android --verbose
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
+          ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
 
       - name: Build APK 🔨
         run: |
           cd android
           chmod +x gradlew
           ./gradlew assembleDebug
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
+          ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
 
       - name: Upload APK 📤
         uses: actions/upload-artifact@v4
