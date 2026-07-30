@@ -1,0 +1,15 @@
+{
+  "appId": "com.greezio.friday",
+  "appName": "Friday",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "backgroundColor": "#0a0a1a"
+    }
+  }
+}

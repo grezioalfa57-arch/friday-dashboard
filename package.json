@@ -1,0 +1,33 @@
+{
+  "name": "friday-dashboard",
+  "version": "1.0.0",
+  "description": "Friday Dashboard — AI Assistant pribadi Greez",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grezioalfa57-arch/friday-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grezioalfa57-arch/friday-dashboard/issues"
+  },
+  "homepage": "https://github.com/grezioalfa57-arch/friday-dashboard#readme",
+  "dependencies": {
+    "@capacitor/android": "^8.4.2",
+    "@capacitor/cli": "^8.4.2",
+    "@capacitor/core": "^8.4.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "vite": "^5.4.21"
+  }
+}
