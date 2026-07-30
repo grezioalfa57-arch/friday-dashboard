@@ -37,7 +37,7 @@ jobs:
         run: ls -la dist/
 
       - name: Sync Capacitor 🔌
-        run: npx cap sync android --verbose
+        run: npx cap sync android
         env:
           ANDROID_HOME: /usr/local/lib/android/sdk
           ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
